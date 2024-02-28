@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+
+
 contract NFTSocialMediaPlatform {
     address public owner;
     uint256 private tokenIdCounter;

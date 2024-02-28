@@ -3,12 +3,12 @@ import { ethers } from "hardhat";
 async function main() {
 
 
-  const NFTSocialMediaPlatform = await ethers.deployContract("NFTSocialMediaPlatform");
+  const NFTSocialMediaFactory = await ethers.deployContract("NFTSocialMediaFactory");
 
-  await NFTSocialMediaPlatform.waitForDeployment();
+  await NFTSocialMediaFactory.waitForDeployment();
 
   console.log(
-    `NFTSocialMediaPlatformdeployed to ${NFTSocialMediaPlatform.target}`
+    `NFTSocialMediaFactory deployed to ${NFTSocialMediaFactory.target}`
   );
 }
 
